@@ -1,4 +1,4 @@
-# DIY Submarine — Group 17
+# DIY Submarine — Group 5
 
 **Sanjivani University · Makerspace**
 
@@ -24,9 +24,13 @@ No performance figures (depth, speed, endurance) have been measured yet.
 
 ## Team
 
-<!-- EDIT: replace with real names -->
-- [Member 1], [Member 2], [Member 3], [Member 4] — [Year & branch], Sanjivani University
-- Project guide: [Guide name]
+1. Autade Yashraj
+2. Viraj Patare
+3. Pranav Kathale
+4. Rushikesh Chinchane
+
+Sanjivani University
+**Project guide:** Dr. Kiran Wakchaure
 
 ## Repository layout
 
@@ -72,7 +76,6 @@ The site detects its GitHub address automatically, so the documentation links po
 
 ## Editing the site
 
-- Team names: search `index.html` for `[Member` and `[Guide name]`.
 - Dimensions: the *Design specification* table in `index.html` (section 06) and `docs/design-and-materials.md`.
 - New photos: add to `media/photos/` and `media/web/`, then add an entry to `assets/js/gallery-data.js`.
 - Test results: replace the *No measured results yet* note in section 08 and fill `data/tank-test-log-template.csv`.

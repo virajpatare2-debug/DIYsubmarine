@@ -1,6 +1,9 @@
 # Project overview
 
-**Project:** DIY Submarine · **Group:** 17 · **Where:** Makerspace, Sanjivani University
+**Project:** DIY Submarine · **Group:** 5 · **Where:** Makerspace, Sanjivani University
+
+**Team:** Autade Yashraj, Viraj Patare, Pranav Kathale, Rushikesh Chinchane  
+**Project guide:** Dr. Kiran Wakchaure
 
 ## Problem
 
