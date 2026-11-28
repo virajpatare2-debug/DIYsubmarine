@@ -2,7 +2,7 @@
 
 **Sanjivani University · Makerspace**
 
-A low-cost underwater vehicle built from a sealed uPVC pipe hull with a threaded, removable access cap, small DC-motor thrusters sealed in PVC sleeves, and a tether that carries power and control from the surface. Designed in SolidWorks, assembled in the Makerspace and float-tested in a water tank.
+A low-cost underwater vehicle built from a sealed uPVC pipe hull with a threaded, removable access cap, small DC-motor thrusters sealed in PVC sleeves, and a tether that carries power and control from the surface. Designed in SolidWorks, assembled in the Makerspace with laser-cut and 3D-printed (Bambu Lab A1 mini) parts, and float-tested in a water tank.
 
 **Live site:** https://virajpatare2-debug.github.io/DIYsubmarine/
 
@@ -17,6 +17,9 @@ A low-cost underwater vehicle built from a sealed uPVC pipe hull with a threaded
 | Sealed DC-motor thruster pods, strapped to hull | ✅ Built |
 | Tether to surface power | ✅ Built |
 | Tank test 01 — floats level at the surface | ✅ Done ([video](media/video/Tank_Test.mp4)) |
+| CAD updated to twin-thruster layout | ✅ Done ([video](media/video/CAD_Hull_Turntable.mp4)) |
+| 5-blade propeller 3D-printed on Bambu Lab A1 mini | ✅ Done ([video](media/video/A1_Mini_Propeller_Print.mp4)) |
+| Laser-cut cradles, fins, ballast tray (DXF from SolidWorks) | 🔄 Next |
 | Leak test, ballast and trim, submerged run | 🔄 Next |
 | Dimensions, mass, motor ratings | 📝 To record |
 
@@ -40,7 +43,7 @@ assets/                    CSS, JavaScript, fonts, favicon, link-preview image
 media/photos/              Lab photographs and tank-test stills (web size)
 media/web/                 ~800 px thumbnails
 media/cad-screenshots/     SolidWorks views
-media/video/               Tank-test video
+media/video/               Tank-test, CAD turntable and 3D-print videos
 docs/                      Engineering record (Markdown)
 cad/                       SolidWorks native files and exports (add yours)
 data/                      Test-log template (CSV)

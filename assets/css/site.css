@@ -306,3 +306,20 @@ body.presentation .section { padding-block: 72px; min-height: calc(100vh - var(-
 body.presentation .title-block h2 { font-size: 52px; }
 
 .sim-pair input[type="number"] { width: 110px; }
+
+
+/* ---------- digital fabrication ---------- */
+.fab-grid { display: grid; gap: 24px; margin-bottom: 32px; }
+@media (min-width: 960px) { .fab-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.fab-card { border: 1px solid var(--line); background: var(--surface); padding: 22px; display: flex; flex-direction: column; }
+.fab-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 14px; }
+.fab-head h3 { font-size: 24px; margin: 0; }
+.fab-card h4 { font-family: var(--mono); font-size: 13px; text-transform: uppercase; letter-spacing: .06em; color: var(--accent-ink); margin: 14px 0 6px; }
+.fab-card p, .fab-card ul { color: var(--muted); }
+.fab-card ul { padding-left: 20px; margin-bottom: 0; }
+.fab-media { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; margin-bottom: 16px; }
+.fab-media .image-button img { aspect-ratio: 3 / 4; object-fit: cover; }
+.fab-video { display: grid; gap: 32px; align-items: start; }
+@media (min-width: 960px) { .fab-video { grid-template-columns: 340px minmax(0, 1fr); } }
+.fab-steps { padding-left: 22px; color: var(--muted); display: grid; gap: 8px; margin-bottom: 20px; }
+.fab-steps strong { color: var(--text); }

@@ -134,7 +134,7 @@
     thruster: {
       status: "Built",
       name: "Thruster pod",
-      text: "Small DC motor in a short PVC sleeve, open end packed with sealant, driving a red four-blade propeller. Strapped under the hull in the tank test; reversing polarity reverses thrust. Motor rating to be recorded."
+      text: "Small DC motor in a short PVC sleeve, open end packed with sealant, driving a propeller: a bought red four-blade in the first test, now being replaced by our own five-blade Ø60 mm propeller printed in PLA on the Bambu Lab A1 mini. Strapped under the hull in the tank test; reversing polarity reverses thrust. Motor rating to be recorded."
     },
     straps: {
       status: "Built",

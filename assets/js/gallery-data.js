@@ -5,7 +5,8 @@ window.GALLERY_CATEGORIES = [
   { id: "hull", label: "Hull & caps" },
   { id: "thrusters", label: "Thrusters" },
   { id: "wiring", label: "Wiring & tether" },
-  { id: "testing", label: "Tank test" }
+  { id: "testing", label: "Tank test" },
+  { id: "fabrication", label: "Laser & 3D print" }
 ];
 
 window.GALLERY = [
@@ -80,5 +81,50 @@ window.GALLERY = [
     kind: "Video still",
     title: "Tank test — thruster pod",
     caption: "Motor pod strapped beneath the hull; tether running to the tank edge."
+  },
+  {
+    id: "CAD_Hull_Twin_Thrusters",
+    full: "media/cad-screenshots/CAD_Hull_Twin_Thrusters.jpg",
+    thumb: "media/web/CAD_Hull_Twin_Thrusters-800.jpg",
+    category: "cad",
+    kind: "CAD",
+    title: "SolidWorks assembly — second iteration",
+    caption: "Updated hull model with two thruster pods and propellers under the hull and the threaded access cap at the right. Photographed from the laptop screen."
+  },
+  {
+    id: "CAD_Hull_Turntable_Still",
+    full: "media/cad-screenshots/CAD_Hull_Turntable_Still.jpg",
+    thumb: "media/web/CAD_Hull_Turntable_Still-800.jpg",
+    category: "cad",
+    kind: "Video still",
+    title: "SolidWorks turntable",
+    caption: "Still from the screen recording of the assembly being rotated in SolidWorks."
+  },
+  {
+    id: "Laser_Cutter_Makerspace",
+    full: "media/photos/Laser_Cutter_Makerspace.jpg",
+    thumb: "media/web/Laser_Cutter_Makerspace-800.jpg",
+    category: "fabrication",
+    kind: "Photo",
+    title: "Makerspace laser cutter",
+    caption: "The CO2 laser cutter used for the flat parts (cradles, fins, ballast tray) cut from SolidWorks DXF exports."
+  },
+  {
+    id: "Propeller_Bambu_Studio_Slicing",
+    full: "media/photos/Propeller_Bambu_Studio_Slicing.jpg",
+    thumb: "media/web/Propeller_Bambu_Studio_Slicing-800.jpg",
+    category: "fabrication",
+    kind: "Photo",
+    title: "Propeller in Bambu Studio",
+    caption: "The five-blade propeller STL placed on the A1 mini textured PEI plate, ready to slice."
+  },
+  {
+    id: "A1_Mini_Printing_Propeller",
+    full: "media/photos/A1_Mini_Printing_Propeller.jpg",
+    thumb: "media/web/A1_Mini_Printing_Propeller-800.jpg",
+    category: "fabrication",
+    kind: "Video still",
+    title: "A1 mini printing the propeller",
+    caption: "Bambu Lab A1 mini printing the propeller blades in white PLA (still from the video)."
   }
 ];
