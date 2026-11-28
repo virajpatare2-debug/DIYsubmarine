@@ -153,5 +153,14 @@ window.GALLERY = [
     kind: "Photo",
     title: "Thruster 2 — near the access cap",
     caption: "Motor pod mounted along the hull on a bracket next to the threaded access cap and taped in place; white printed propeller."
+  },
+  {
+    id: "Wiring_Twin_Thrusters",
+    full: "media/photos/Wiring_Twin_Thrusters.jpg",
+    thumb: "media/web/Wiring_Twin_Thrusters-800.jpg",
+    category: "wiring",
+    kind: "Photo",
+    title: "Wiring both thrusters",
+    caption: "Connecting the motor leads of the two-thruster hull to the tether in the Makerspace; Bambu Lab printers on the bench behind."
   }
 ];
