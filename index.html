@@ -150,13 +150,14 @@
           <div class="anatomy-stage" tabindex="0" role="region" aria-label="Schematic side view, scrollable on small screens">
             <svg class="anatomy-svg" viewBox="0 0 1000 400" role="img" aria-labelledby="an-title an-desc">
               <title id="an-title">DIY Submarine side view</title>
-              <desc id="an-desc">A long horizontal PVC hull floating at the water surface. Plain end cap on the left; grey threaded adapter and white screw-in plug on the right. A sealed motor pod is strapped under the hull near the right end, with a tether cable running up to the surface.</desc>
+              <desc id="an-desc">A long horizontal PVC hull floating at the water surface. Plain end cap on the left; grey threaded adapter and white screw-in plug on the right. Two sealed DC-motor thruster pods are strapped to the hull: thruster 1 near the fixed end cap, mounted across the hull; thruster 2 near the access cap, mounted along the hull. Both drive white 3D-printed propellers. Motor leads join the tether that runs up to the surface.</desc>
               <rect x="0" y="118" width="1000" height="282" class="a-water"></rect>
               <path d="M0 118 H1000" class="a-surface"></path>
-              <text x="16" y="236" class="a-label">Water (tank test)</text>
+              <text x="16" y="386" class="a-label">Water (tank test)</text>
 
               <g class="a-part tether" data-part="tether" tabindex="0" role="button" aria-label="Tether cable">
-                <path d="M700 238 C640 300 560 250 600 180 C630 120 760 40 960 30"></path>
+                <path d="M300 224 C380 262 500 262 556 204"></path>
+                <path d="M612 230 C556 276 520 240 556 180 C596 112 760 40 960 30"></path>
               </g>
               <g class="a-part hull" data-part="hull" tabindex="0" role="button" aria-label="Hull">
                 <rect class="body" x="170" y="92" width="610" height="76"></rect>
@@ -170,21 +171,30 @@
                 <rect class="body" x="874" y="112" width="12" height="36"></rect>
               </g>
               <g class="a-part straps" data-part="straps" tabindex="0" role="button" aria-label="Straps and wire ties">
-                <path d="M660 90 V214"></path>
-                <path d="M742 90 V214"></path>
+                <path d="M248 90 L292 200"></path>
+                <path d="M292 90 L248 200"></path>
+                <path d="M646 90 V214"></path>
+                <path d="M716 90 V214"></path>
               </g>
-              <g class="a-part thruster" data-part="thruster" tabindex="0" role="button" aria-label="Thruster pod">
-                <rect class="body" x="640" y="196" width="126" height="44" rx="8"></rect>
-                <rect class="body" x="618" y="214" width="22" height="8"></rect>
-                <path class="prop" d="M612 218 L598 188 L606 186 Z M612 218 L598 248 L606 250 Z"></path>
+              <g class="a-part thruster" data-part="thruster1" tabindex="0" role="button" aria-label="Thruster 1, near the fixed end cap">
+                <circle class="body" cx="270" cy="222" r="28"></circle>
+                <circle class="body" cx="270" cy="222" r="5"></circle>
+                <path class="prop" d="M270 222 L262 194 L278 194 Z M270 222 L294 236 L286 248 Z M270 222 L246 236 L254 248 Z"></path>
+              </g>
+              <g class="a-part thruster" data-part="thruster2" tabindex="0" role="button" aria-label="Thruster 2, near the threaded access cap">
+                <rect class="body" x="612" y="196" width="128" height="44" rx="8"></rect>
+                <rect class="body" x="740" y="214" width="20" height="8"></rect>
+                <path class="prop" d="M764 218 L778 188 L770 186 Z M764 218 L778 248 L770 250 Z"></path>
               </g>
 
               <g class="labels-layer" aria-hidden="true">
                 <path class="a-leader" d="M140 86 L120 54"></path><text x="60" y="46" class="a-label">Fixed end cap</text>
                 <path class="a-leader" d="M450 92 L450 54"></path><text x="390" y="46" class="a-label a-label-strong">uPVC hull (sealed, air-filled)</text>
                 <path class="a-leader" d="M850 90 L860 64"></path><text x="760" y="58" class="a-label">Threaded access cap</text>
-                <path class="a-leader" d="M700 240 L700 300"></path><text x="610" y="318" class="a-label">Sealed DC-motor thruster pod</text>
-                <path class="a-leader" d="M742 168 L820 200"></path><text x="822" y="206" class="a-label">Wire-tie straps</text>
+                <path class="a-leader" d="M270 250 L270 300"></path><text x="150" y="318" class="a-label">Thruster 1 — across the hull</text>
+                <path class="a-leader" d="M676 240 L676 300"></path><text x="566" y="318" class="a-label">Thruster 2 — along the hull</text>
+                <text x="566" y="336" class="a-label">White 3D-printed propellers</text>
+                <path class="a-leader" d="M716 168 L820 200"></path><text x="822" y="206" class="a-label">Wire-tie straps</text>
                 <text x="770" y="22" class="a-label">Tether → surface power</text>
               </g>
               <g class="forces-layer" aria-hidden="true">
@@ -192,18 +202,18 @@
                   <marker id="arr-up" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3cc6d8"></path></marker>
                   <marker id="arr-dn" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#f2a33a"></path></marker>
                 </defs>
-                <path class="a-force up" d="M420 300 V176" marker-end="url(#arr-up)"></path>
-                <text x="300" y="330" class="a-label">Buoyancy  F_b = ρ·g·V_displaced</text>
-                <path class="a-force down" d="M500 130 V262" marker-end="url(#arr-dn)"></path>
-                <text x="510" y="290" class="a-label">Weight  W = m·g</text>
-                <text x="300" y="360" class="a-label">Floats while F_b(fully submerged) &gt; W  →  add ballast to dive</text>
+                <path class="a-force up" d="M420 330 V176" marker-end="url(#arr-up)"></path>
+                <text x="330" y="356" class="a-label">Buoyancy  F_b = ρ·g·V_displaced</text>
+                <path class="a-force down" d="M500 130 V258" marker-end="url(#arr-dn)"></path>
+                <text x="440" y="284" class="a-label">Weight  W = m·g</text>
+                <text x="330" y="380" class="a-label">Floats while F_b(fully submerged) &gt; W  →  add ballast to dive</text>
               </g>
             </svg>
           </div>
           <div class="part-info" aria-live="polite">
             <p class="part-status" id="part-status">Select a part</p>
             <h3 class="part-name" id="part-name">DIY Submarine</h3>
-            <p class="part-text" id="part-text">Tap the hull, either end cap, the thruster pod, the straps or the tether.</p>
+            <p class="part-text" id="part-text">Tap the hull, either end cap, either thruster, the straps or the tether.</p>
           </div>
         </div>
       </div>
@@ -284,10 +294,27 @@
           </li>
           <li class="journey-step">
             <div class="step-media">
-              <button class="image-button" type="button" data-open="Laser_Cutter_Makerspace"><img src="media/web/Laser_Cutter_Makerspace-800.jpg" alt="Team member at the Makerspace CO2 laser cutter with its lid open" loading="lazy" width="602" height="800"></button>
+              <button class="image-button" type="button" data-open="Twin_Thrusters_Overview"><img src="media/web/Twin_Thrusters_Overview-800.jpg" alt="The full hull on the floor with two grey motor pods fitted, one near each end, both with white printed propellers" loading="lazy" width="800" height="602"></button>
+              <button class="image-button" type="button" data-open="Thruster_1_Front_Pod"><img src="media/web/Thruster_1_Front_Pod-800.jpg" alt="Thruster 1 near the fixed end cap, mounted across the hull and tied on with yellow wire" loading="lazy" width="800" height="602"></button>
+              <button class="image-button" type="button" data-open="Thruster_2_Rear_Pod"><img src="media/web/Thruster_2_Rear_Pod-800.jpg" alt="Thruster 2 near the threaded access cap, mounted along the hull and taped in place" loading="lazy" width="800" height="602"></button>
             </div>
             <div>
               <span class="step-num">STEP 07</span>
+              <h3>Two thrusters fitted with printed propellers</h3>
+              <p>Both motor pods are now on the hull, each with a white 3D-printed propeller:</p>
+              <ul>
+                <li><strong>Thruster 1</strong> — near the fixed end cap, mounted across the hull and tied on with wire.</li>
+                <li><strong>Thruster 2</strong> — near the threaded access cap, mounted along the hull on a bracket and taped, propeller facing the cap end.</li>
+                <li>Each motor sits in a grey PVC sleeve with the ends sealed; the leads join the tether.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="journey-step">
+            <div class="step-media">
+              <button class="image-button" type="button" data-open="Laser_Cutter_Makerspace"><img src="media/web/Laser_Cutter_Makerspace-800.jpg" alt="Team member at the Makerspace CO2 laser cutter with its lid open" loading="lazy" width="602" height="800"></button>
+            </div>
+            <div>
+              <span class="step-num">STEP 08</span>
               <h3>Laser cutting — flat parts</h3>
               <p>Flat parts — motor-pod cradles, stabiliser fins and the internal ballast tray — are exported from SolidWorks as DXF and cut on the Makerspace CO<sub>2</sub> laser cutter. See <a class="text-link" href="#fabrication">Digital fabrication</a>.</p>
             </div>

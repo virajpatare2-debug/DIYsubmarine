@@ -166,7 +166,7 @@ tbody th { font-weight: 600; }
 .a-part { cursor: pointer; transition: opacity .2s; }
 .a-part .body { fill: var(--surface-2); stroke: var(--text); stroke-width: 2; }
 .a-part.cap .body { fill: color-mix(in srgb, var(--muted) 35%, var(--surface-2)); }
-.a-part.thruster .prop { fill: #e0463a; stroke: var(--text); stroke-width: 1.5; }
+.a-part.thruster .prop { fill: #f4f4f2; stroke: var(--text); stroke-width: 1.5; }
 .a-part.tether path { fill: none; stroke: var(--water); stroke-width: 3; }
 .a-part.straps path { fill: none; stroke: var(--accent); stroke-width: 5; }
 .a-part:hover .body, .a-part.is-selected .body { stroke: var(--accent); }

@@ -131,15 +131,20 @@
       name: "Threaded access cap",
       text: "Grey threaded adapter with a white screw-in plug. Unscrews to reach the inside of the hull for ballast or internal parts, then closes again. Thread seal to be leak-tested under water."
     },
-    thruster: {
+    thruster1: {
       status: "Built",
-      name: "Thruster pod",
-      text: "Small DC motor in a short PVC sleeve, open end packed with sealant, driving a propeller: a bought red four-blade in the first test, now being replaced by our own five-blade Ø60 mm propeller printed in PLA on the Bambu Lab A1 mini. Strapped under the hull in the tank test; reversing polarity reverses thrust. Motor rating to be recorded."
+      name: "Thruster 1 — near the fixed end cap",
+      text: "Small DC motor sealed in a grey PVC sleeve, both ends packed with sealant. Mounted across the hull near the fixed end cap and tied on with wire. Drives a white propeller 3D-printed on the Bambu Lab A1 mini. Reversing polarity reverses thrust. Motor rating to be recorded."
+    },
+    thruster2: {
+      status: "Built",
+      name: "Thruster 2 — near the threaded access cap",
+      text: "Second DC motor in a sealed grey PVC sleeve, mounted along the hull on a bracket next to the threaded access cap and taped in place. Its white 3D-printed propeller faces the access-cap end. Reversing polarity reverses thrust. Motor rating to be recorded."
     },
     straps: {
       status: "Built",
       name: "Straps and wire ties",
-      text: "Wire ties wrapped around the hull hold the thruster pods and keep the cable tidy along the hull."
+      text: "Wire ties and tape hold the two thruster pods to the hull and keep the motor leads tidy along it."
     },
     tether: {
       status: "Built",
@@ -162,7 +167,7 @@
       if (!id) {
         statusEl.textContent = "Select a part";
         nameEl.textContent = "DIY Submarine";
-        textEl.textContent = "Tap the hull, either end cap, the thruster pod, the straps or the tether.";
+        textEl.textContent = "Tap the hull, either end cap, either thruster, the straps or the tether.";
         return;
       }
       const part = PARTS[id];

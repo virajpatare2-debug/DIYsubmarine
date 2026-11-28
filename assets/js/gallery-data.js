@@ -126,5 +126,32 @@ window.GALLERY = [
     kind: "Video still",
     title: "A1 mini printing the propeller",
     caption: "Bambu Lab A1 mini printing the propeller blades in white PLA (still from the video)."
+  },
+  {
+    id: "Twin_Thrusters_Overview",
+    full: "media/photos/Twin_Thrusters_Overview.jpg",
+    thumb: "media/web/Twin_Thrusters_Overview-800.jpg",
+    category: "thrusters",
+    kind: "Photo",
+    title: "Two thrusters on the hull",
+    caption: "Full hull with both motor pods fitted: thruster 1 near the fixed end cap, thruster 2 near the threaded access cap, both with white 3D-printed propellers."
+  },
+  {
+    id: "Thruster_1_Front_Pod",
+    full: "media/photos/Thruster_1_Front_Pod.jpg",
+    thumb: "media/web/Thruster_1_Front_Pod-800.jpg",
+    category: "thrusters",
+    kind: "Photo",
+    title: "Thruster 1 — near the fixed end cap",
+    caption: "Motor in a sealed grey PVC sleeve, mounted across the hull and tied on with yellow wire; white printed propeller."
+  },
+  {
+    id: "Thruster_2_Rear_Pod",
+    full: "media/photos/Thruster_2_Rear_Pod.jpg",
+    thumb: "media/web/Thruster_2_Rear_Pod-800.jpg",
+    category: "thrusters",
+    kind: "Photo",
+    title: "Thruster 2 — near the access cap",
+    caption: "Motor pod mounted along the hull on a bracket next to the threaded access cap and taped in place; white printed propeller."
   }
 ];
